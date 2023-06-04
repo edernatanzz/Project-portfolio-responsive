@@ -83,12 +83,15 @@ a{
     align-items: center;
     justify-content: center; 
 }
+
+.section_title h1{
+    
+}
 /*nav*/
 .l-header{
     width: 100%;
     height: var(--header-height);
-   background-color: var(ma
-   );
+   background-color: var();
      position: fixed; 
      top: 0; 
      left: 0; 
@@ -136,6 +139,7 @@ a{
         text-transform: capitalize;
         padding-top: var(--header-height);
     }
+
     .nav__item{
         padding: 15px 0;
 
@@ -171,6 +175,7 @@ a{
 .nav__link:hover::before{
     width: 100%;
 }
-.nav__link:hover{
+.nav__link:hover, 
+.nav__link.active-link{
     color: var()
 }
