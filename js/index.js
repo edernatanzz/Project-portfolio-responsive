@@ -13,7 +13,6 @@ const showMneu = (toggleId, navId) => {
 }
 showMneu('nav-toggle', 'nav')
 
-
 /*------------ REMOVER MENU MOBILE -------------*/
 const navLink = document.querySelectorAll('.nav__link')
 function linkAction() {
@@ -22,3 +21,22 @@ function linkAction() {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*==================== DEIXA O LINK CLICADO COM A CLASS ACTIVE-LINK ====================*/
+const linkColor = document.querySelectorAll('.nav__link')
+
+function colorLink(){
+    if(linkColor){
+        linkColor.forEach(L => L.classList.remove('active-link'))
+        this.classList.add('active-link')
+    }
+}
+
+linkColor.forEach(L=> L.addEventListener('click', colorLink))
+/*==================== MUDAR A COR DO HEADER ====================*/
+function scrollHeader(){
+    const scrollHeader = document.getElementById('header')
+    if(this.scrollY >= 100) scrollHeader.classList.add('scroll-header'); else scrollHeader.classList.remove('scroll-header')
+
+}
+window.addEventListener('scroll', scrollHeader)
