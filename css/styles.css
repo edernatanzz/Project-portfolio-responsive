@@ -160,10 +160,10 @@ a{
     width: 100%;
     height: var(--header-height);
     background-color: #666666;
-     position: fixed; 
-     top: 0; 
-     left: 0; 
-     z-index: 999999; 
+   /*  position: fixed; */
+  /*   top: 0; */
+  /*   left: 0; 
+     z-index: 999999; */
     transition: all 400ms ease;
 }
 .navbar{
