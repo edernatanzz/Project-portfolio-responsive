@@ -47,7 +47,7 @@
 } 
 
 body{
-    background-color: #666666;
+    background-color: darkgray;
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
     overflow-x: hidden;
@@ -513,16 +513,83 @@ a{
 .contatos{
     width: 100%;
 
-    background-image: url(../img/homem-usando-tecnologia-inteligente-de-maquete-psd-de-tablet-digital.jpg);
-    
+    background-image: url();
+
+    background-repeat: no-repeat;
+    background-position:top left;
+    z-index: var(--z_negative);
+
+
+
+}
+.contatos__content__descripion{
+width: 100%;
+padding: 2rem;
+text-align: center;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+
+
+
+}
+.contatos__content__descripion .box{
+    padding: 20px;
+
 }
 
+.contatos__content__descripion .box .inner img{
+    margin-bottom: mb1;
+    width: 50px;
+
+}
+
+.contatos__content__descripion .box inner{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    text-transform: capitalize;
+    padding: 10px;
+    position: relative;
+
+}
+.contatos__content__descripion.box .inner::before,
+.contatos__content__descripion.box .inner::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+.contatos__content__descripion.box .inner::before{
+
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.contatos__content__descripion.box .inner::after{
+    top: 0;
+    right: 0;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+
+
+
+}
+.contatos__content__descripion.box:hover .inner::before,
+.contatos__content__descripion.box:hover .inner::after{
+    border-color: black;
+    width: 100%;
+    height: 100%;
 
 
 
 
-
-
+}
 
 
 
