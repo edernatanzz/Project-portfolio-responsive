@@ -160,11 +160,15 @@ a{
     width: 100%;
     height: var(--header-height);
     background-color: #666666;
-   /*  position: fixed; */
-  /*   top: 0; */
-  /*   left: 0; 
-     z-index: 999999; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
     transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
 }
 .navbar{
     justify-content: space-between;
@@ -206,7 +210,7 @@ a{
     .flex{
         display: flex;
         align-items: center;
-        justify-content: cneter;
+        justify-content: space-between;
     }
     .section__title{
         margin: 0 auto ;
