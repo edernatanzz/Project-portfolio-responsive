@@ -582,7 +582,7 @@ gap: 10px;
     width: 100%;
     height: 80%;
     position: absolute;
-   background-color:#fff ;
+   background-color:darkgray ;
     position: absolute;
     top: 20px;
     left: 0;
@@ -602,7 +602,7 @@ gap: 10px;
 }
 .projetos__img img{
     margin: var(--mb-05);
-    background-color: #000000;
+    background-color:#cc7722;
     cursor: pointer;
     filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.2));
     -webkit-filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.2));
@@ -771,11 +771,17 @@ gap: 10px;
 }
 
 /* footer */ 
+.footer{
+    background-color: #666666;
+    height: 20%;
+}
 .footer__list{
+  
     grid-template-columns: repeat(1, 1fr);
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #000000;
+    width: 100%;
 }
 .footer__data-social .social__icon{
     color: var(--first-color);
